@@ -38,10 +38,10 @@ google_analytics_tracking_id: "UA-6580555-1"
 
 # Includes links to social in the footer
 social-links:
-    - name: Facebook
-      url: "https://www.facebook.com/pavol.mikulas.9"
-    - name: LinkedIn
-      url: "https://www.linkedin.com/in/pavolmikulas"
+  - name: Facebook
+    url: "https://www.facebook.com/pavol.mikulas.9"
+  - name: LinkedIn
+    url: "https://www.linkedin.com/in/pavolmikulas"
 
 # name: Google+
 # url: "https://plus.google.com/+PavolMikulasDesigner"
@@ -70,9 +70,9 @@ kramdown:
     css_class: 'highlight'
 
 #theme: ""
-backgroundColor: "#f3f5f8"
-themeColor: "#5bbad5"
-fontColor: "#1a1a1a"
+backgroundColor: "#fafafa"
+themeColor: "#0074D9"
+fontColor: "#050505"
 
 # Compress html files
 compress_html:

@@ -50,13 +50,6 @@ layout: compress
 {% include footer.html %}
 
 <!-- JavaScript code placed at the end of the document so the pages load faster -->
-<script>
-  window.setTimeout(function() {
-    var element = document.querySelector('body');
-    element.classList.add('loaded');
-  }, 2000);
-</script>
-
 <script src="{{ "/js/scripts.js" | prepend: site.baseurl }}"></script>
 
 <!-- Google Analytics -->
