@@ -38,10 +38,12 @@ google_analytics_tracking_id: "UA-6580555-1"
 
 # Includes links to social in the footer
 social-links:
-  - name: Facebook
+  - name: "Facebook"
     url: "https://www.facebook.com/pavol.mikulas.9"
-  - name: LinkedIn
+  - name: "LinkedIn"
     url: "https://www.linkedin.com/in/pavolmikulas"
+  - name: "Behance"
+    url: "http://be.net/pavolmikulas"
 
 # name: Google+
 # url: "https://plus.google.com/+PavolMikulasDesigner"
