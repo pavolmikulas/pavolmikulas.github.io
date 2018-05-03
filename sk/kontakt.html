@@ -1,0 +1,35 @@
+---
+title: Kontakt
+description: Ak by ste sa chceli dozvedieť viac o tom čo robím, vyvíjate nový produkt, alebo sa chcete niečo spýtať, prosím napíšte mi.
+permalink: /sk/kontakt/
+layout: default
+published: true
+group: contact
+lang: sk
+language: Slovensky
+og-locale: sk_SK
+og-image: pavol-mikulas-designer-2017-w1000.jpg
+order: 3
+---
+<main class="fouc p15 pd3 cpt">
+  <div class="crs">
+
+    <div class="row">
+      <div class="col cd9 ofd3">
+        <a class="rda" href="{{ site.baseurl }}/sk/o-mne/">
+          <figure class="boy">
+            {% include image25-50vw.html basename="pavol-mikulas-designer-2017-circle" alt=site.title %}
+            <figcaption class="pt-5 pb175">O mne →</figcaption>
+          </figure>
+        </a>
+
+        <h1 class="h1">{{ page.title }}</h1>
+        {% if page.subtitle %}<h2 class="h2">{{ page.subtitle }}</h2>{% endif %}
+
+        <p>Ak by ste sa chceli dozvedieť viac o tom čo robím, alebo máte záujem o spoluprácu, prosím <a href="mailto:{{ site.email }}" onmouseover="this.href=this.href.replace(/(x|y|z)/g,'');">napíšte mi</a>.</p>
+
+      </div>
+    </div>
+
+  </div>
+</main>

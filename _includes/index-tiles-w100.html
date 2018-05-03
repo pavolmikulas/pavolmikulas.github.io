@@ -1,0 +1,33 @@
+<div class="fouc db p15 pd3 cpt">
+  <div class="crl">
+
+  {% assign pages = site.pages | sort: 'order' | reverse %}
+
+  {% for p in pages %}
+    {% if p.group == "project" %}
+      {% if p.lang == page.lang and p.label and p.image and p.index_tile != false %}
+
+        <div class="row">
+
+          <div class="col">
+            <a class="dbk" href="{{ p.url | prepend: site.baseurl }}">
+              <div class="boy">
+                {% include image100vw.html basename=p.image alt=p.title %}
+                <svg class="arw w20 fouc" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 300 300" width="300" height="300">
+                  <circle fill="none" stroke="#0074D9" stroke-width="1" stroke-miterlimit="10" cx="150" cy="150" r="140"></circle>
+                  <polyline fill="none" stroke="#0074D9" stroke-width="1" stroke-miterlimit="10" points="152.2 131.6 186.2 148.9 186.2 151.1 152.2 168.4 "></polyline>
+                  <line fill="none" stroke="#0074D9" stroke-width="1" stroke-miterlimit="10" x1="186.2" y1="150" x2="118.2" y2="150"></line>
+                </svg>
+              </div>
+              <div class="pt-5 pb175">{{ p.label }} →</div>
+            </a>
+          </div>
+
+        </div>
+
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+
+  </div>
+</div>

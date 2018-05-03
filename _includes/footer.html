@@ -1,0 +1,23 @@
+<footer class="fouc db p15 pd3">
+  <div class="crs">
+    <div class="row">
+      <div class="col cd9 ofd3">
+
+          {% if site.email %}
+            <a class="mail" href="mailto:{{ site.email }}" onmouseover="this.href=this.href.replace(/(x|y|z)/g,'');">Email</a>
+          {% endif %}
+
+          {% if site.social-links %}
+            {% for item in site.social-links %}
+              <a target="_blank" href="{{ item.url }}">{{ item.name }}</a>
+            {% endfor %}
+          {% endif %}
+
+        {% if site.title %}
+          <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}</p>
+        {% endif %}
+
+      </div>
+    </div>
+  </div>
+</footer>
