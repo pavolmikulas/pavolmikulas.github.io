@@ -3,7 +3,7 @@ This is the source for my personal website running at [www.pavolmikulas.com](htt
 
 # License
 The following directories and their contents are Copyright © 2018 Pavol Mikuláš. You may not reuse anything therein without my prior, written permission:
-img/
+img/  
 video/
 
 All other directories and files are MIT Licensed.
