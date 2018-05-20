@@ -73,7 +73,7 @@ kramdown:
 
 #theme: ""
 backgroundColor: "#fafafa"
-themeColor: "#0074D9"
+themeColor: "#0057ff"
 fontColor: "#050505"
 
 # Compress html files
