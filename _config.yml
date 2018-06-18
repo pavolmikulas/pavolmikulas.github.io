@@ -33,7 +33,7 @@ url: "http://www.pavolmikulas.com"
 
 
 # Enter your Google Analytics web tracking code (e.g. UA-6580555-1) to activate tracking
-google_analytics_tracking_id: "UA-6580555-1"
+#google_analytics_tracking_id: "UA-6580555-1"
 
 
 # Includes links to social in the footer
