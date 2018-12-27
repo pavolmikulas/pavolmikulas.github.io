@@ -14,14 +14,13 @@ thumbnail: olgoj-chorchoj-website-2by1
 image: olgoj-chorchoj-website-2by1
 og-image: olgoj-chorchoj-website-2by1-w2000.jpg
 order: 5
-work_tile: yes
 index_tile: false
 work_tile: false
 ---
-<div class="fouc p15 pd3 cpt">
-  <div class="crl">
+<div class="ctr">
+  <div class="ctr">
 
-    <div class="row">
+    <div class="row pb1">
       <div class="col">
         {% include image100vw.html basename="olgoj-chorchoj-website-2by1" alt="Olgoj Chorchoj webstránky" %}
       </div>
@@ -30,21 +29,30 @@ work_tile: false
   </div>
 </div>
 
-<main class="fouc p15 pd3">
-  <div class="crs">
+
+<main class="p1">
+  <div class="ctr">
+
+    <div class="row pb05">
+      <div class="col cd9 ofd3">
+        <h1 class="h1">{{ page.title }}</h1>
+      </div>
+    </div>
+
+    <div class="row pb1">
+      <div class="col c6 cd4 ofd3">
+        {% include image50vw.html basename="olgoj-chorchoj-website-mockup-4by3" alt="Webové stránky Olgoj Chorchoj mockup" %}
+      </div>
+    </div>
 
     <div class="row">
       <div class="col cd9 ofd3">
-        <img class="imgf py15" alt="Webové stránky Olgoj Chorchoj mockup" src="{{ site.baseurl }}/img/olgoj-chorchoj-website-mockup.png" />
-
-        <h1 class="h1">{{ page.title }}</h1>
-
         <p>Web dizajn a kód webovej stránky a systému pre správu obsahu štúdia <a target="_blank" href="http://www.olgojchorchoj.cz/">Olgoj Chorchoj</a>.</p>
-
       </div>
     </div>
 
   </div>
 </main>
+
 
 {% include highlight-tiles.html %}

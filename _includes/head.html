@@ -11,9 +11,9 @@
 
 <!-- Title -->
 {% if index_title %}
-<title>{% if page.group == "index" %}{{ index_title }} - {{ index_subtitle }}{% else %}{{ page.title }} - {{ index_title }}{% endif %}</title>
+<title>{% if page.group == "index" %}{{ index_title }}{% else %}{{ index_title }} — {{ page.title }}{% endif %}</title>
 {% else %}
-<title>{% if page.group == "index" %}{{ site.title }} - {{ site.subtitle }}{% else %}{{ page.title }} - {{ site.title }}{% endif %}</title>
+<title>{% if page.group == "index" %}{{ site.title }} — {{ site.subtitle }}{% else %}{{ site.title }} — {{ page.title }}{% endif %}</title>
 {% endif %}
 
 <!-- Description -->
@@ -68,22 +68,6 @@
 {% endfor %}
 
 <!-- Styles -->
-
-<!-- FOUC -->
-<style>
-  .loading .fouc {
-    opacity: 0;
-  }
-</style>
-
-<noscript>
-  <style>
-    .loading .fouc {
-      opacity: 1;
-    }
-  </style>
-</noscript>
-
 <link rel="stylesheet" href="{{ "/css/styles.css" | prepend: site.baseurl }}">
 
 </head>

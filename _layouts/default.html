@@ -40,9 +40,9 @@ layout: compress
 
 <!-- Body -->
 {% if page_class != "" %}
-  <body class="{{ page_class }} loading" onload="document.body.classList.add('loaded')" onerror="document.body.classList.add('loaded')">
+  <body class="{{ page_class }} loading">
 {% else %}
-  <body class="loading" onload="document.body.classList.add('loaded')" onerror="document.body.classList.add('loaded')">
+  <body class="loading">
 {% endif %}
 
 {% include header.html %}
@@ -50,12 +50,11 @@ layout: compress
 {% include footer.html %}
 
 <!-- JavaScript code placed at the end of the document so the pages load faster -->
-<script src="{{ "/js/scripts.js" | prepend: site.baseurl }}"></script>
-
-<!-- Google Analytics -->
-{% if site.development == false and site.google_analytics_tracking_id and site.google_analytics_tracking_id != "" %}
-  {% include google-analytics.html %}
-{% endif %}
+<script>
+  window.setTimeout(function () {
+    document.body.className = document.body.className.replace(/\bloading\b/,'loaded');
+  }, 1000);
+</script>
 
 </body>
 </html>

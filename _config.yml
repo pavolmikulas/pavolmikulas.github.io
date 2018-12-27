@@ -17,7 +17,7 @@ title: Pavol Mikuláš
 subtitle: designer
 author: Pavol Mikuláš
 email: feedbgck@pgvolhikulgs.coh
-description: "Pavol Mikuláš is a cross disciplinary designer, creator of Walnut table, carafe ONA and White chair."
+description: "Pavol Mikuláš is a cross-disciplinary designer, creator of Walnut table, carafe ONA and White chair."
 
 
 # If you're hosting your site at a Project repository on GitHub pages
@@ -47,6 +47,14 @@ social-links:
 
 # name: Google+
 # url: "https://plus.google.com/+PavolMikulasDesigner"
+
+
+# Includes links to legal in the footer
+legal-links:
+  - name: "Terms"
+    url: "/legal/terms/"
+  - name: "Privacy"
+    url: "/legal/privacy/"
 
 
 timezone: Europe/Bratislava

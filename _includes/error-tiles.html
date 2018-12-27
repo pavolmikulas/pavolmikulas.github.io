@@ -1,5 +1,5 @@
-<div class="fouc p15 pd3 hgh">
-  <div class="crs">
+<div class="p1 hgh">
+  <div class="ctr">
 
     <div class="row">
       <div class="col c6">
@@ -38,20 +38,20 @@
             <div class="row">
         {% endif %}
 
-          <div class="col c3">
+          <div class="col c4">
             <a href="{{ p.url | prepend: site.baseurl }}">
               <div class="boy">
                 {% assign ttl = p.title | replace: ' ', ' ' %}
-                {% include image25vw.html basename=p.thumbnail alt=ttl %}
+                {% include image33vw.html basename=p.thumbnail alt=ttl %}
 
                 <svg class="arw w30" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 300 300" width="300" height="300">
                   <circle fill="none" stroke="#0057ff" stroke-width="3" stroke-miterlimit="10" cx="150" cy="150" r="140"></circle>
-                  <polyline fill="none" stroke="#0057ff" stroke-width="3" stroke-miterlimit="10" points="152 132 186 149 186 151 152 168"></polyline>
+                  <path fill="none" stroke="#0057ff" stroke-width="3" stroke-miterlimit="10" d="M152 132 186 149 186 151 152 168"></path>
                   <line fill="none" stroke="#0057ff" stroke-width="3" stroke-miterlimit="10" x1="186" y1="150" x2="118" y2="150"></line>
                 </svg>
               </div>
 
-              <div class="pt05 pb175">{{ p.label }}</div>
+              <div class="py05">{{ p.label }}</div>
             </a>
           </div>
 

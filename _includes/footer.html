@@ -1,23 +1,83 @@
-<footer class="fouc p15 pd3">
-  <div class="crs">
+<footer class="p1">
+  <div class="ctr">
+
     <div class="row">
       <div class="col cd9 ofd3">
 
-          {% if site.email %}
-            <a class="mail" href="mailto:{{ site.email }}" onmouseover="this.href=this.href.replace(/h/g,'m').replace(/g/g,'a');">Email</a>
-          {% endif %}
-
-          {% if site.social-links %}
-            {% for item in site.social-links %}
-              <a target="_blank" href="{{ item.url }}">{{ item.name }}</a>
-            {% endfor %}
-          {% endif %}
-
-        {% if site.title %}
-          <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}</p>
+        <!-- Home button -->
+        <!-- Detect active page by url -->
+        {% if page.lang == "sk" %}
+          {% assign home_title = "Domov" %}
+        {% else %}
+          {% assign home_title = "Home" %}
         {% endif %}
+        {% if (page.group == "index") %}
+          <a href="{{ index_url | replace:"index.html","" | prepend: site.baseurl }}" class="hm pyr01 act" title="{{home_title}}">
+        {% else %}
+          <a href="{{ index_url | replace:"index.html","" | prepend: site.baseurl }}" class="hm pyr01" title="{{home_title}}">
+        {% endif %}
+          <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 18 22" width="18" height="22">
+            <path fill="none" stroke="#0057FF" stroke-width="1" d="M16 20 2 20 2 10 8 2 10 2 16 10 z"></path>
+          </svg>
+        </a>
+        <!-- End of Home button -->
+
+        <!-- Main menu -->
+        {% assign pages = site.pages | sort: "order" %}
+        {% for p in pages %}
+          {% if p.title and p.lang == page.lang and (p.group == "about" or p.group == "work" or p.group == "contact") %}
+            <!-- Detect active page by url -->
+            {% if (page.url == p.url) or (page.group == p.children) %}
+              <a class="pyr01 act" href="{{ p.url | prepend: site.baseurl }}">{{ p.title }}</a>
+            {% else %}
+              <a class="pyr01" href="{{ p.url | prepend: site.baseurl }}">{{ p.title }}</a>
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+        <!-- End of Main menu -->
 
       </div>
     </div>
+
+
+    <div class="row">
+      <div class="col cd9 ofd3">
+
+        <!-- Social links -->
+        {% if site.social-links and site.social-links != "" %}
+          {% for item in site.social-links %}
+            <a class="pyr01" target="_blank" href="{{ item.url }}">{{ item.name }}</a>
+          {% endfor %}
+        {% endif %}
+        <!-- End of Social links -->
+
+      </div>
+    </div>
+
+
+    <div class="row pt01">
+      <div class="col cd9 ofd3 cpr">
+        <!-- Copyright -->
+        {% if site.title %}
+          &copy; {{ site.time | date: '%Y' }} {{ site.title }}
+        {% endif %}
+        <!-- End of Copyright -->
+
+        <!-- Legal -->
+        {% if site.legal-links and site.legal-links != "" %}
+          {% for item in site.legal-links %}
+            <!-- Detect active page by url -->
+            {% if (page.url == item.url) %}
+              <a class="pyl01 act" href="{{ item.url | prepend: site.baseurl }}">{{ item.name }}</a>
+            {% else %}
+              <a class="pyl01" href="{{ item.url | prepend: site.baseurl }}">{{ item.name }}</a>
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+        <!-- End of Legal -->
+      </div>
+    </div>
+
+
   </div>
 </footer>

@@ -11,32 +11,36 @@ og-locale: sk_SK
 og-image: pavol-mikulas-essence-2by1-w2000.jpg
 order: 2
 ---
-{% include index-tiles-w100.html %}
+<main class="px1">
+  <div class="ctr">
 
-<main class="fouc p15 pd3">
-  <div class="crs">
-
-    <div class="row">
-      <div class="col cd10 ofd2">
-        <a href="{{ site.baseurl }}/sk/o-mne/">
-          <figure class="boy">
-            {% include image25-50vw.html basename="pavol-mikulas-designer-2017-circle" alt=site.title %}
-            <figcaption class="pt05 pb175">O mne →</figcaption>
-          </figure>
-        </a>
-      </div>
-    </div>
-
-    <div class="row">
+    <div class="row pb2">
       <div class="col cd9 ofd3">
-
-        <h1 class="h1 mb05">{{ page.title }}</h1>
-        {% if page.subtitle %}<h2 class="h2 mt05">{{ page.subtitle }}</h2>{% endif %}
-
-        <p>Som multidisciplinárny dizajnér, ktorý verí, že dizajn zameraný na človeka môže spraviť našu planétu lepším miestom pre život.</p>
-        <p>Verím v silu pozitívneho myslenia a koncentrácie sa na používateľa.</p>
+        <p class="h1 mw2">Rád navrhujem produkty a značky a učím sa nové veci.</p>
+        <p><a href="/sk/o-nas/">Toto som ja →</a></p>
       </div>
     </div>
 
   </div>
 </main>
+
+
+{% include index-tiles-w100.html %}
+
+
+<div class="px1">
+  <div class="ctr">
+
+    <div class="row">
+      <div class="col cd9 ofd3">
+        <h1 class="h1">{{ page.title }}</h1>
+        {% if page.subtitle %}<h2 class="h2 mt05">{{ page.subtitle }}</h2>{% endif %}
+        <p>Som multidisciplinárny dizajnér so sídlom v Bratislave.</p>
+        <p>Spoločnosti si ma najímajú, aby som definoval, navrhol, vyprototypoval, vyrobil, testoval a overil výrobky a značky.</p>
+        <p>Som hrdý, že môžem pracovať pre Eset, DZ Dražice a Re pello.</p>
+        <p><a href="/sk/prace/">Prečítajte si viac o mojej práci →</a></p>
+      </div>
+    </div>
+
+  </div>
+</div>

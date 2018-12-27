@@ -17,8 +17,19 @@ order: 2
 index_tile: true
 work_tile: true
 ---
-<div class="fouc p15 pd3 cpt">
-  <div class="crl">
+<div class="ctr pb2">
+
+  <div class="row">
+    <div class="col">
+      {% include image100vw.html basename="white-chair-2by1" alt="White chair" %}
+    </div>
+  </div>
+
+</div>
+
+
+<div class="px1">
+  <div class="ctr">
 
     <div class="row">
       <div class="col c6">
@@ -29,33 +40,36 @@ work_tile: true
       </div>
     </div>
 
-    <div class="row">
-      <div class="col">
-        {% include image100vw.html basename="white-chair-2by1" alt="White chair" %}
-      </div>
-    </div>
-
   </div>
 </div>
 
-<main class="fouc p15 pd3">
-  <div class="crs">
+
+<main class="p1">
+  <div class="ctr">
+
+    <div class="row pb05">
+      <div class="col cd9 ofd3">
+        <h1 class="h1">{{ page.title }}</h1>
+      </div>
+    </div>
+
+    <div class="row pb1">
+      <div class="col c6 cd5 ofd3">
+        {% include image50vw.html basename="white-chair-drawing-4by3" alt="White chair drawing" %}
+      </div>
+    </div>
 
     <div class="row">
       <div class="col cd9 ofd3">
-        <img class="imgf py15" alt="White chair drawing" src="{{ site.baseurl }}/img/white-chair-drawing.png" />
-
-        <h1 class="h1">{{ page.title }}</h1>
-
         <p>This simple chair is made from beech with wood bending technology. I designed it in 2008.</p>
         <p>The chair makes an excelent pair with the Walnut table. I wanted to create a chair that complemented the Walnut table.</p>
         <p>It is a simple and undistinguished chair but still elegant and comfortable.</p>
         <p>It was exhibited at Prague’s <a target="_blank" href="http://www.designblok.cz/">Designblok</a> in 2008.</p>
-
       </div>
     </div>
 
   </div>
 </main>
+
 
 {% include highlight-tiles.html %}

@@ -17,8 +17,19 @@ order: 2
 index_tile: true
 work_tile: true
 ---
-<div class="fouc p15 pd3 cpt">
-  <div class="crl">
+<div class="ctr pb2">
+
+  <div class="row">
+    <div class="col">
+      {% include image100vw.html basename="white-chair-2by1" alt="Biela stolička" %}
+    </div>
+  </div>
+
+</div>
+
+
+<div class="px1">
+  <div class="ctr">
 
     <div class="row">
       <div class="col c6">
@@ -29,32 +40,35 @@ work_tile: true
       </div>
     </div>
 
-    <div class="row">
-      <div class="col">
-        {% include image100vw.html basename="white-chair-2by1" alt="Biela stolička" %}
-      </div>
-    </div>
-
   </div>
 </div>
 
-<main class="fouc p15 pd3">
-  <div class="crs">
+
+<main class="p1">
+  <div class="ctr">
+
+    <div class="row pb05">
+      <div class="col cd9 ofd3">
+        <h1 class="h1">{{ page.title }}</h1>
+      </div>
+    </div>
+
+    <div class="row pb1">
+      <div class="col c6 cd5 ofd3">
+        {% include image50vw.html basename="white-chair-drawing-4by3" alt="Biela stolička výkres" %}
+      </div>
+    </div>
 
     <div class="row">
       <div class="col cd9 ofd3">
-        <img class="imgf py15" alt="Biela stolička výkres" src="{{ site.baseurl }}/img/white-chair-drawing.png"/>
-
-        <h1 class="h1">{{ page.title }}</h1>
-
         <p>V roku 2008 som navrhol k <a href="/sk/prace/orechovy-stol/">Orechovému stolu</a> jednoduchú bielu stoličku z ohýbaného bukového dreva.</p>
         <p>Chcel som vytvoriť nenápadnú, tichú stoličku, ktorá nechá stôl zažiariť.</p>
         <p>Stolička bola vystavená na výstave <a target="_blank" href="http://www.designblok.cz/">Designblok</a> v roku 2008.</p>
-
       </div>
     </div>
 
   </div>
 </main>
+
 
 {% include highlight-tiles.html %}

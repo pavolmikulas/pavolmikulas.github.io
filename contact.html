@@ -11,23 +11,22 @@ og-locale: en_US
 og-image: pavol-mikulas-designer-2017-w1000.jpg
 order: 3
 ---
-<main class="fouc p15 pd3 cpt">
-  <div class="crs">
+<main class="px1">
+  <div class="ctr">
 
     <div class="row">
-      <div class="col cd9 ofd3">
+      <div class="col c6 cd4 ofd2">
         <a class="rda" href="{{ site.baseurl }}/about/">
-          <figure class="boy">
-            {% include image25-50vw.html basename="pavol-mikulas-designer-2017-circle" alt=site.title %}
-            <figcaption class="pt05 pb175">About →</figcaption>
-          </figure>
+          {% include image50vw.html basename="pavol-mikulas-designer-2017-circle" alt="Pavol Mikuláš" %}
         </a>
+      </div>
+    </div>
 
-        <h1 class="h1">{{ page.title }}</h1>
-        {% if page.subtitle %}<h2 class="h2">{{ page.subtitle }}</h2>{% endif %}
-
-        <p>I’d love to hear from you. If you’d like to learn more about what I do or are interested in cooperation, feel free to <a class="mail" href="mailto:{{ site.email }}" onmouseover="this.href=this.href.replace(/h/g,'m').replace(/g/g,'a');">contact me</a>.</p>
-
+    <div class="row pb1">
+      <div class="col cd9 ofd3">
+        <h1 class="h2">{{ page.title }}</h1>
+        <p class="h1 mw15">I'd love to hear from you.</p>
+        <p><a class="mail" href="mailto:{{ site.email }}" onmouseover="this.href=this.href.replace(/h/g,'m').replace(/g/g,'a');">Email me →</a></p>
       </div>
     </div>
 

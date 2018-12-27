@@ -1,7 +1,7 @@
 ---
 title: Pavol Mikuláš
 subtitle: designer
-description: Pavol Mikuláš is a cross disciplinary designer, who believes that human-centered design can make our planet a better place to live.
+description: Pavol Mikuláš is a cross-disciplinary designer, who believes that human-centered design can make our planet a better place to live.
 layout: default
 published: true
 group: index
@@ -11,32 +11,36 @@ og-locale: en_US
 og-image: pavol-mikulas-essence-2by1-w2000.jpg
 order: 1
 ---
-{% include index-tiles-w100.html %}
+<main class="px1">
+  <div class="ctr">
 
-<main class="fouc p15 pd3">
-  <div class="crs">
-
-    <div class="row">
-      <div class="col cd10 ofd2">
-        <a href="{{ site.baseurl }}/about/">
-          <figure class="boy">
-            {% include image25-50vw.html basename="pavol-mikulas-designer-2017-circle" alt=site.title %}
-            <figcaption class="pt05 pb175">About →</figcaption>
-          </figure>
-        </a>
-      </div>
-    </div>
-
-    <div class="row">
+    <div class="row pb2">
       <div class="col cd9 ofd3">
-
-        <h1 class="h1 mb05">{{ page.title }}</h1>
-        {% if page.subtitle %}<h2 class="h2 mt05">{{ page.subtitle }}</h2>{% endif %}
-
-        <p>I am a cross-disciplinary designer, who believes that human-centered design can make our planet a better place to live.</p>
-        <p>I believe in the power of positive thinking and concentration on a user.</p>
+        <p class="h1 mw2">I love to design products and brands and learn new things.</p>
+        <p><a href="/about/">This is who I am →</a></p>
       </div>
     </div>
 
   </div>
 </main>
+
+
+{% include index-tiles-w100.html %}
+
+
+<div class="px1">
+  <div class="ctr">
+
+    <div class="row">
+      <div class="col cd9 ofd3">
+        <h1 class="h1">{{ page.title }}</h1>
+        {% if page.subtitle %}<h2 class="h2 mt05">{{ page.subtitle }}</h2>{% endif %}
+        <p>I am a cross-disciplinary designer based in Bratislava, Slovakia.</p>
+        <p>Companies hire me to define, ideate, prototype, produce, test, and validate products and brands.</p>
+        <p>I am proud to work for Eset, DZ Dražice, and Re pello.</p>
+        <p><a href="/work/">Read more about my work →</a></p>
+      </div>
+    </div>
+
+  </div>
+</div>
