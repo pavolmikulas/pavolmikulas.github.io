@@ -5,15 +5,13 @@
 
 <head>
 <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
 <!-- Title -->
-{% if index_title %}
-<title>{% if page.group == "index" %}{{ index_title }}{% else %}{{ index_title }} — {{ page.title }}{% endif %}</title>
+{% if index_title and index_subtitle %}
+<title>{% if page.group == "index" %}{{ index_title }} | {{index_subtitle}}{% else %}{{ page.title }} | {% if page.subtitle %}{{ page.subtitle }} | {% endif %}{{ index_title }}{% endif %}</title>
 {% else %}
-<title>{% if page.group == "index" %}{{ site.title }} — {{ site.subtitle }}{% else %}{{ site.title }} — {{ page.title }}{% endif %}</title>
+<title>{% if page.group == "index" %}{{ site.title }} | {{ site.subtitle }}{% else %}{{ page.title }} | {{ site.title }} | {{ site.subtitle }}{% endif %}</title>
 {% endif %}
 
 <!-- Description -->

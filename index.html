@@ -16,7 +16,7 @@ order: 1
 
     <div class="row pb2">
       <div class="col cd9 ofd3">
-        <p class="h1 mw2">I love to design products and brands and learn new things.</p>
+        <p class="h1 mw2">I’m cross-disciplinary designer, thinker, and maker.</p>
         <p><a href="/about/">This is who I am →</a></p>
       </div>
     </div>
@@ -33,8 +33,9 @@ order: 1
 
     <div class="row">
       <div class="col cd9 ofd3">
-        <h1 class="h1">{{ page.title }}</h1>
-        {% if page.subtitle %}<h2 class="h2 mt05">{{ page.subtitle }}</h2>{% endif %}
+        <h1 class="h1">{{ page.title }}
+          {% if page.subtitle %}<span class="h2 mt05">{{ page.subtitle }}</span>{% endif %}
+        </h1>
         <p>I am a cross-disciplinary designer based in Bratislava, Slovakia.</p>
         <p>Companies hire me to define, ideate, prototype, produce, test, and validate products and brands.</p>
         <p>I am proud to work for Eset, DZ Dražice, and Re pello.</p>
